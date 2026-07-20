@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzy - A Treasure of Tastes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-tab-bar">
+        <span>Home-1</span>
+    </div>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <button class="hamburger-btn" aria-label="Menu">
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H17M1 6H17M1 11H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li>
+                        <a href="#">Category</a>
+                        <svg class="caret-icon" width="8" height="5" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                        <svg class="caret-icon" width="8" height="5" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                        <svg class="caret-icon" width="8" height="5" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                        <svg class="caret-icon" width="8" height="5" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#">Elements</a>
+                        <svg class="caret-icon" width="8" height="5" viewBox="0 0 10 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-phone">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>+123 ( 456 ) ( 7890 )</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-header">
+        <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo-area">
+                <img src="images/chef_logo.png" alt="Foodzy Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Foodzy</h1>
+                    <p>A Treasure of Tastes</p>
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search For items...">
+                <div class="category-select">
+                    <span>All Categories</span>
+                    <svg class="caret-icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <button class="search-btn" aria-label="Search">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- User Actions -->
+            <div class="user-actions">
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <span>Account</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span>Wishlist</span>
+                </div>
+                <div class="action-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <img src="images/yellow_chili.png" alt="Yellow Chili" class="floating-chili chili-left">
+
+            <div class="hero-content">
+                <span class="super-title">Super</span>
+                <h2 class="delicious-title">Delicious</h2>
+
+                <div class="roast-turkey-badge">
+                    <span class="badge-text">ROAST TURKEY</span>
+                </div>
+
+                <button class="order-btn">
+                    <span class="arrow-circle">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </span>
+                    <span class="btn-text">Order Now</span>
+                </button>
+            </div>
+
+            <div class="hero-image-area">
+                <div class="turkey-wrapper">
+                    <img src="images/roasted_turkey.png" alt="Roast Turkey" class="turkey-img">
+                    <img src="images/yellow_chili.png" alt="Yellow Chili" class="floating-chili chili-right-bottom">
+                </div>
+
+                <div class="hero-footer-info">
+                    <div class="follow-us">
+                        <span class="follow-title">Follow Us Now</span>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.388.511a3.002 3.002 0 0 0-2.11 2.107C0 8.021 0 12 0 12s0 3.979.502 5.837a3.001 3.001 0 0 0 2.11 2.107C4.495 20.455 12 20.455 12 20.455s7.505 0 9.388-.511a3.001 3.001 0 0 0 2.11-2.107C24 15.979 24 12 24 12s0-3.979-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="call-us-info">
+                        <span class="call-number">Call Us : 658-7854-9634</span>
+                        <span class="website-link">Typeyourwebsitehere</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Popular Categories Section -->
+    <section class="categories-section">
+        <div class="container text-center">
+            <span class="section-subtitle">CUSTOMER FAVORITES</span>
+            <h2 class="section-title">Popular Catagories</h2>
+
+            <div class="categories-grid">
+                <!-- Card 1 -->
+                <div class="category-card animate-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/cat_hamburger.png" alt="Main Dish" class="category-card-img">
+                    </div>
+                    <h3>Main Dish</h3>
+                    <p>(86 dishes)</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="category-card animate-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/cat_sandwich.png" alt="Break Fast" class="category-card-img">
+                    </div>
+                    <h3>Break Fast</h3>
+                    <p>(12 break fast)</p>
+                </div>
+                <div class="category-card animate-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/cat_dessert.png" alt="Dessert" class="category-card-img">
+                    </div>
+                    <h3>Dessert</h3>
+                    <p>(48 dessert)</p>
+                </div>
+                <div class="category-card animate-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/cat_juice.png" alt="Browse All" class="category-card-img">
+                    </div>
+                    <h3>Browse All</h3>
+                    <p>(255 Items)</p>
+                </div>
+                <div class="category-card animate-card">
+                    <div class="category-img-wrapper">
+                        <img src="images/cat_salad.png" alt="Breakfast Food" class="category-card-img">
+                    </div>
+                    <h3>Breakfast Food</h3>
+                    <p>(205 Items)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-sells-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="best-sells-title">Daily Best Sells</h2>
+                <ul class="best-sells-tabs">
+                    <li><a href="#" class="tab-link active">Featured</a></li>
+                    <li><a href="#" class="tab-link">Popular</a></li>
+                    <li><a href="#" class="tab-link">New added</a></li>
+                </ul>
+            </div>
+
+            <div class="best-sells-container">
+                <!-- Banner Card -->
+                <div class="best-sells-banner">
+                    <div class="banner-content">
+                        <h3>Bring nature into your home</h3>
+                        <button class="banner-btn">Shop Now &rarr;</button>
+                    </div>
+                </div>
+
+                <div class="products-carousel-wrapper">
+                    <button class="carousel-nav nav-prev" aria-label="Previous">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <span class="product-badge bg-green">Save 35%</span>
+                            <div class="product-img-wrapper">
+                                <img src="images/coconut_flakes.png" alt="Unsweetened Coconut Flakes"
+                                    class="product-img">
+                            </div>
+                            <span class="product-brand">Hodo Foods</span>
+                            <h4 class="product-title">All Natural Italian-Style Chicken Meatballs</h4>
+                            <div class="product-rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$238.85</span>
+                                <span class="old-price">$245.8</span>
+                            </div>
+                            <div class="product-stock">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="stock-labels">
+                                    <span>Sold: 90/120</span>
+                                </div>
+                            </div>
+                            <button class="add-cart-btn">&bull;&bull;&bull;Add To Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <span class="product-badge bg-blue">Sale</span>
+                            <div class="product-img-wrapper">
+                                <img src="images/orange_snack.png" alt="Nut Crumbs" class="product-img">
+                            </div>
+                            <span class="product-brand">Hodo Foods</span>
+                            <h4 class="product-title">Angie's Boomchickapop Sweet and womnies</h4>
+                            <div class="product-rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$238.85</span>
+                                <span class="old-price">$245.8</span>
+                            </div>
+                            <div class="product-stock">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="stock-labels">
+                                    <span>Sold: 90/120</span>
+                                </div>
+                            </div>
+                            <button class="add-cart-btn">&bull;&bull;&bull;Add To Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <span class="product-badge bg-orange">Best sale</span>
+                            <div class="product-img-wrapper">
+                                <img src="images/green_veggie.png" alt="Organic Veggie Pops" class="product-img">
+                            </div>
+                            <span class="product-brand">Hodo Foods</span>
+                            <h4 class="product-title">Foster Farms Takeout Crispy Classic</h4>
+                            <div class="product-rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$238.85</span>
+                                <span class="old-price">$245.8</span>
+                            </div>
+                            <div class="product-stock">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="stock-labels">
+                                    <span>Sold: 90/120</span>
+                                </div>
+                            </div>
+                            <button class="add-cart-btn">&bull;&bull;&bull;Add To Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <span class="product-badge bg-pink">Save 15%</span>
+                            <div class="product-img-wrapper">
+                                <img src="images/orange_snack.png" alt="Nut Snack"
+                                    class="product-img dark-pouch-filter">
+                            </div>
+                            <span class="product-brand">Hodo Foods</span>
+                            <h4 class="product-title">Blue Diamond Almonds Lightly Salted</h4>
+                            <div class="product-rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">$238.85</span>
+                                <span class="old-price">$245.8</span>
+                            </div>
+                            <div class="product-stock">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="stock-labels">
+                                    <span>Sold: 90/120</span>
+                                </div>
+                            </div>
+                            <button class="add-cart-btn">&bull;&bull;&bull;Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Nav Right -->
+                    <button class="carousel-nav nav-next" aria-label="Next">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="standout-dishes-section">
+        <div class="container">
+            <div class="standout-header-wrapper">
+                <div class="standout-title-area">
+                    <span class="section-subtitle">SPECIAL DISHES</span>
+                    <h2 class="section-title">Standout Dishes<br>From Our Menu</h2>
+                </div>
+                <div class="standout-nav-buttons">
+                    <button class="standout-nav nav-prev-dishes" aria-label="Previous Standout Dish">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <button class="standout-nav nav-next-dishes active" aria-label="Next Standout Dish">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="standout-grid">
+                <div class="standout-card">
+                    <button class="heart-badge" aria-label="Add to Wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </button>
+                    <div class="standout-img-wrapper">
+                        <img src="images/salad_fattoush.jpg" alt="Fattoush salad" class="standout-card-img">
+                    </div>
+                    <h3>Fattoush salad</h3>
+                    <p class="standout-desc">Description of the item</p>
+                </div>
+
+                <div class="standout-card">
+                    <button class="heart-badge" aria-label="Add to Wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </button>
+                    <div class="standout-img-wrapper">
+                        <img src="images/salad_vegetable.jpg" alt="Vegetable salad" class="standout-card-img">
+                    </div>
+                    <h3>Vegetable salad</h3>
+                    <p class="standout-desc">Description of the item</p>
+                </div>
+
+                <div class="standout-card">
+                    <button class="heart-badge" aria-label="Add to Wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </button>
+                    <div class="standout-img-wrapper">
+                        <img src="images/salad_egg.jpg" alt="Egg vegi salad" class="standout-card-img">
+                    </div>
+                    <h3>Egg vegi salad</h3>
+                    <p class="standout-desc">Description of the item</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="deals-day-section">
+        <div class="container">
+            <div class="deals-header">
+                <h2 class="deals-title">Deals Of The Day</h2>
+                <a href="#" class="all-deals-link">All Deals &gt;</a>
+            </div>
+
+            <div class="deals-grid">
+                <div class="deal-card" style="background-image: url('images/deal_quinoa.jpg');">
+                    <div class="deal-details-box">
+                        <h4 class="deal-product-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h4>
+                        <div class="deal-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-val">(4.0)</span>
+                        </div>
+                        <p class="deal-vendor">By <span class="vendor-green">NestFood</span></p>
+                        <div class="deal-bottom-row">
+                            <div class="deal-price-block">
+                                <span class="deal-current-price">$32.85</span>
+                                <span class="deal-old-price">$33.8</span>
+                            </div>
+                            <button class="deal-add-btn">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card" style="background-image: url('images/deal_citrus.jpg');">
+                    <div class="deal-details-box">
+                        <h4 class="deal-product-title">Perdue Simply Smart Organics Gluten Free</h4>
+                        <div class="deal-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-val">(4.0)</span>
+                        </div>
+                        <p class="deal-vendor">By <span class="vendor-green">Old El Paso</span></p>
+                        <div class="deal-bottom-row">
+                            <div class="deal-price-block">
+                                <span class="deal-current-price">$24.85</span>
+                                <span class="deal-old-price">$26.8</span>
+                            </div>
+                            <button class="deal-add-btn">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card" style="background-image: url('images/deal_peas.jpg');">
+                    <div class="deal-details-box">
+                        <h4 class="deal-product-title">Signature Wood-Fired Mushroom and Caramelized</h4>
+                        <div class="deal-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-val">(3.0)</span>
+                        </div>
+                        <p class="deal-vendor">By <span class="vendor-green">Progresso</span></p>
+                        <div class="deal-bottom-row">
+                            <div class="deal-price-block">
+                                <span class="deal-current-price">$12.85</span>
+                                <span class="deal-old-price">$13.8</span>
+                            </div>
+                            <button class="deal-add-btn">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deal-card" style="background-image: url('images/deal_lemonade.jpg');">
+                    <div class="deal-details-box">
+                        <h4 class="deal-product-title">Simply Lemonade with Raspberry Juice</h4>
+                        <div class="deal-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-val">(3.0)</span>
+                        </div>
+                        <p class="deal-vendor">By <span class="vendor-green">Yoplait</span></p>
+                        <div class="deal-bottom-row">
+                            <div class="deal-price-block">
+                                <span class="deal-current-price">$15.85</span>
+                                <span class="deal-old-price">$16.8</span>
+                            </div>
+                            <button class="deal-add-btn">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose-us-section">
+        <div class="container">
+            <div class="choose-us-grid">
+                <div class="choose-us-image-wrapper">
+                    <img src="images/choose_us_salad.jpg" alt="Healthy salad dish" class="choose-us-img">
+                </div>
+                <div class="choose-us-content">
+                    <h2 class="choose-title">Why People Choose us?</h2>
+
+                    <div class="choose-card">
+                        <div class="choose-icon-circle bg-orange-light">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="5.5" cy="18.5" r="2.5" />
+                                <circle cx="18.5" cy="18.5" r="2.5" />
+                                <path d="M3 17h12c1.7 0 3-1.3 3-3V8a3 3 0 0 0-3-3H9L6 9H2" />
+                                <line x1="12" y1="5" x2="12" y2="9" />
+                            </svg>
+                        </div>
+                        <div class="choose-info">
+                            <h4>Convenient and Reliable</h4>
+                            <p>Whether you dine in, take out, or order delivery, our service is convenient, fast, and
+                                reliable, making mealtime hassle-free.</p>
+                        </div>
+                    </div>
+
+                    <div class="choose-card">
+                        <div class="choose-icon-circle bg-yellow-light">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="choose-info">
+                            <h4>Variety of Options</h4>
+                            <p>From hearty meals to light snacks, we offer a wide range of options to suit every taste
+                                and craving.</p>
+                        </div>
+                    </div>
+
+                    <div class="choose-card">
+                        <div class="choose-icon-circle bg-green-light">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 10.5a8.5 8.5 0 0 1 17 0V12H2v-1.5z"></path>
+                                <path d="M2 12c0 2 1.5 3 3.5 3h10c2 0 3.5-1 3.5-3"></path>
+                                <path d="M21 16H3a1 1 0 0 0-1 1v1a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-1a1 1 0 0 0-1-1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="choose-info">
+                            <h4>Eat Burger</h4>
+                            <p>Our burgers are grilled to perfection, with juicy patties and flavorful toppings that
+                                make every bite a delicious experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-banner">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Stay home & get your daily<br>needs from our shop</h2>
+                    <p class="newsletter-subtitle">Start You'r Daily Shopping with <span class="vendor-green">Nest
+                            Mart</span></p>
+
+                    <form class="newsletter-input-box"
+                        onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#adadad" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+                <div class="newsletter-image-wrapper">
+                    <img src="images/delivery_guy.jpg" alt="Courier delivering fresh vegetables"
+                        class="newsletter-courier-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-badges-section">
+        <div class="container">
+            <div class="footer-badges-grid">
+                <div class="badge-card">
+                    <div class="badge-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3bb77e" stroke-width="2">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
+                            </path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Best prices & offers</h4>
+                        <p>Orders $50 or more</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <div class="badge-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3bb77e" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Free delivery</h4>
+                        <p>24/7 amazing services</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <div class="badge-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3bb77e" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="12"></line>
+                            <line x1="9" y1="15" x2="15" y2="15"></line>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Great daily deal</h4>
+                        <p>When you sign up</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <div class="badge-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3bb77e" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Wide assortment</h4>
+                        <p>Mega Discounts</p>
+                    </div>
+                </div>
+
+                <div class="badge-card">
+                    <div class="badge-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3bb77e" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h4>Easy returns</h4>
+                        <p>Within 30 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <svg class="decor-lemon" width="80" height="80" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(59, 183, 126, 0.15)" stroke-width="1.2">
+            <path
+                d="M18.88 5.12a8.3 8.3 0 0 0-11.76 0l-.82.82A4.2 4.2 0 0 0 5 9a4.2 4.2 0 0 0 3.06 4.06c1 .4 1.76 1.15 2.16 2.16A4.2 4.2 0 0 0 14.28 18.28l.82-.82a8.3 8.3 0 0 0 0-11.76L18.88 5.12z" />
+            <path d="M14 6c0 1-1 2-2 2" />
+        </svg>
+        <svg class="decor-tomato" width="80" height="80" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(59, 183, 126, 0.15)" stroke-width="1.2">
+            <circle cx="12" cy="13" r="8"></circle>
+            <path d="M12 5c-1-1.5-2.5-2-4-2 .5 1.5 1.5 2.5 3 3"></path>
+            <path d="M12 5c1-1.5 2.5-2 4-2-.5 1.5-1.5 2.5-3 3"></path>
+            <path d="M12 5v3"></path>
+        </svg>
+        <svg class="decor-chili" width="80" height="80" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(59, 183, 126, 0.15)" stroke-width="1.2">
+            <path
+                d="M18 3c-1.2 2.1-3 3.5-5.5 4.5C9 8.7 6.3 11.2 5 14.5c-1.5 3.8-.5 7.5.5 8.5 1 .5 4.5.5 8.5-1 3.2-1.3 5.8-4 7-7.5.9-2.5.4-5.5-3-9z">
+            </path>
+            <path d="M18 3c.5-.8 1-2 1-3"></path>
+        </svg>
+
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col brand-col">
+                    <div class="logo-wrapper">
+                        <img src="images/chef_logo.png" alt="Foodzy Logo" class="footer-logo-img">
+                        <div>
+                            <span class="logo-text">Foodzy</span>
+                            <span class="logo-subtext">A Treasure of Tastes</span>
+                        </div>
+                    </div>
+                    <p class="brand-desc">FoodTrove is the biggest market of grocery products. Get your daily needs from
+                        our store.</p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#f74b3a" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.</span>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#f74b3a" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:example@email.com">example@email.com</a>
+                        </li>
+                        <li>
+                            <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#f74b3a" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <a href="tel:+911234567890">+91 123 4567890</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">contact Us</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">Dairy & Bakery</a></li>
+                        <li><a href="#">Fruits & Vegetable</a></li>
+                        <li><a href="#">Snack & Spice</a></li>
+                        <li><a href="#">Juice & Drinks</a></li>
+                        <li><a href="#">Chicken & Meat</a></li>
+                        <li><a href="#">Fast Food</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col subscribe-col">
+                    <h3>Subscribe Our Newsletter</h3>
+
+                    <form class="footer-subscribe-box"
+                        onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Search here..." required>
+                        <button type="submit" class="footer-send-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4l11.733 16h4.267l-11.733 -16z M4 20l6.768 -6.768 M20 4l-6.768 6.768">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Website">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="insta-feed">
+                        <img src="images/footer_feed1.jpg" alt="Insta food 1" class="insta-img">
+                        <img src="images/footer_feed2.jpg" alt="Insta food 2" class="insta-img">
+                        <img src="images/footer_feed3.jpg" alt="Insta food 3" class="insta-img">
+                        <img src="images/footer_feed4.jpg" alt="Insta food 4" class="insta-img">
+                        <img src="images/footer_feed5.jpg" alt="Insta food 5" class="insta-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="coral-text">Foodzy</span>, All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
